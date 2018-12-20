@@ -220,6 +220,7 @@ function HeroCar() {
     this.x = random(0, 100);
     this.y = random(200, 300);
     this.speed = 27;
+    this.distance = 0;
   
   
     this.display = function() {
