@@ -35,6 +35,14 @@ function draw() {
   }
 }
 
+function keyPressed (){
+
+    if(key == "w"){
+        end = 0;
+        redraw(1);
+    }
+}
+
 function createPack() {
   if (pack.length < 4) {
     pack.push(new Duck());
