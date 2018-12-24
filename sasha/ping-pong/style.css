@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.topic{
+    position: relative;
+    left: 150px;
+}
+.game{
+    position: relative;
+    left: 400px;
+}
+.footer{
+    position: relative; 
+     top: 500px;
+}

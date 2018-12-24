@@ -67,8 +67,6 @@ function draw() {
       s1[i].display();
     }
       check();
-    console.log(bullets.length);
-    console.log(enemies[0].y);
   }
 }
 
@@ -133,7 +131,11 @@ function state0() {
   background(0);
   fill('#00FF5B');
   textSize(30);
-  text("press 'enter' to start", 200, 400);
+  text("press 'q' to start", 300, 400);
+  textSize(30);
+  text("Use w a s d to control ypur ship", 200, 500);
+  textSize(30);
+  text("Press space to shoot", 200, 600);
   textSize(45);
   text("SPACE INVAIDORS", 170, 150);
   textSize(14);
@@ -154,6 +156,7 @@ function check() {
         if (dist < Math.sqrt(2)*50) {
           enemies.splice(j, 1);
           bullets.splice(i, 1);
+            break;
         }
           if (enemies.length == 0) {
             win();
@@ -260,8 +263,7 @@ function keyPressed(){
         state = 1;
       }
     if (key == 'w') {
-        n1.y = n1.y - 12;
-//       
+        n1.y = n1.y - 12;       
       }
     if (key == 'a') {
         n1.x -= 12;
