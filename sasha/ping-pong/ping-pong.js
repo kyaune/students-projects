@@ -1,6 +1,7 @@
 var command_keys = ['w', 's', 'i', 'k'];
-var startingScreen = true, draw2 = false, singlePlayer = false, multiPlayer = false, tutorial = false;
 var keys_pressed = new Array ();
+var startingScreen = true, draw2 = false, singlePlayer = false, multiPlayer = false, tutorial = false;
+
 var score1 = 0, score2 = 0;
 var b = new Ball();
 var p1 = new Platform1();
